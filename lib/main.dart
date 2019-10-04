@@ -45,9 +45,9 @@ class _MyHomePageState extends State<MyHomePage> {
   CircularBottomNavigationController _navigationController;
   List<String> nameslist = ["Im Ironman", "Spiderman", "Thanos"];
   List<String> imageslist = [
-    "assets/gene.png",
-    "assets/gene.png",
-    "assets/gene.png"
+    "assets/Blood Groups.png",
+    "assets/Blood Components.png",
+    "assets/Hematological Terms.png"
   ];
 
   @override
@@ -71,7 +71,8 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center, // centers horizontally
           crossAxisAlignment: CrossAxisAlignment.center, // centers vertically
           children: <Widget>[
-            Image.asset("assets/im1.jpg", width: 70),
+            Text("B+ve"),
+            //Image.asset("assets/im1.jpg", width: 70),
           ],
         ), // 2
         centerTitle: true,
@@ -172,7 +173,7 @@ class mygridview extends StatelessWidget {
       crossAxisCount: grid_count,
       scrollDirection: Axis.vertical,
       children: Cardlist,
-      mainAxisSpacing: 1,
+      mainAxisSpacing: 25,
       crossAxisSpacing: 1,
       padding: EdgeInsets.all(1),
     );
